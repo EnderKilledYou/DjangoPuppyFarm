@@ -3,4 +3,7 @@ gunicorn
 psycopg2-binary
 djangorestframework
 markdown
+factory_boy
+django_factory_boy
 django-filter
+cancel-token

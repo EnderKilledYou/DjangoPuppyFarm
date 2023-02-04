@@ -8,8 +8,8 @@ from app.strings import views
 from app.strings.views import HomeView
 
 router = routers.DefaultRouter()
-router.register(r'users', views.UserViewSet)
-router.register(r'groups', views.GroupViewSet)
+#router.register(r'users', views.PetViewSet)
+
 
 urlpatterns = [
                   path('', HomeView.as_view(), name='home'),
