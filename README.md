@@ -1,6 +1,6 @@
 # Django Puppy farm
 
-> Why
+> What
 
 * Scaffold https://github.com/testdrivenio/django-on-docker
 * Testing
