@@ -8,8 +8,8 @@
 
 > Additions
 
-- [x]  Vue3 app added
-- [x] Vue3 statically served.
+- [x] [Vue3](view/README.md) app added
+- [x] [Vue3](view/README.md) statically served.
 - [ ] Doggo Admin Import
 - [ ] Doggo Admin Keys
 - [ ] Doggo Special Feature
