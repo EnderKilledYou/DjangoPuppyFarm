@@ -12,7 +12,7 @@
 - [x] Vue3 statically served.
 - [ ] Doggo Admin Import
 - [ ] Doggo Admin Keys
-- [ ] Doggo Admin Special Feature
+- [ ] Doggo Special Feature
 
 > Quickstart
 
