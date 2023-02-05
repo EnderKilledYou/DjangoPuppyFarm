@@ -12,11 +12,6 @@
     "type-check": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false"
   },
   "dependencies": {
-    "@tensorflow-models/coco-ssd": "^2.2.2",
-    "@tensorflow/tfjs-backend-cpu": "^4.2.0",
-    "@tensorflow/tfjs-backend-webgl": "^4.2.0",
-    "@tensorflow/tfjs-converter": "^4.2.0",
-    "@tensorflow/tfjs-core": "^4.2.0",
     "autoprefixer": "^10.4.13",
     "pinia": "^2.0.28",
     "postcss": "^8.4.21",

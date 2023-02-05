@@ -1,9 +1,10 @@
+# Create your tests here.
 from django.test import TestCase
 from django.urls import reverse
 from django_factory_boy.auth import UserFactory
 from rest_framework import status
 
-from app.strings.pets import PetFactory, Pet
+from .models import Pet, PetFactory
 
 
 class PetViewSetTestCase(TestCase):

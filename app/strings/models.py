@@ -6,26 +6,24 @@ from factory.django import DjangoModelFactory
 from rest_framework.serializers import ModelSerializer
 
 
-class Pet(models.Model):
 
-    name = models.CharField(max_length=255)
-    description = models.TextField(blank=True)
 
+class Key(models.Model):
+    name = models.CharField(max_length=255,default='')
+    value = models.CharField(max_length=255,default='')
+    last_update = models.DateTimeField(default=0)
+
+    # todo: https://github.com/saxix/django-concurrency
+    # https://en.wikipedia.org/wiki/Optimistic_concurrency_control
     def __str__(self):
         return self.name
 
-class PetFactory(DjangoModelFactory):
-    name = Faker('name')
-    description = Faker('text')
 
 
+class KeySerializer(ModelSerializer):
     class Meta:
-        model = Pet
-
-
-class PetSerializer(ModelSerializer):
-    class Meta:
-        model = Pet
+        model = Key
         fields = (
-            'id', 'name', 'description',
+            'id', 'name', 'value', 'last_update'
         )
+

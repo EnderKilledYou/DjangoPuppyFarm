@@ -40,8 +40,10 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     'rest_framework',
-
+    "movie",
+    "pets",
     "strings",
+
 ]
 
 MIDDLEWARE = [
@@ -111,7 +113,8 @@ REST_FRAMEWORK = {
     'PAGE_SIZE': 10,
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
-    ]
+    ],
+
 }
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
@@ -126,8 +129,8 @@ USE_L10N = True
 
 USE_TZ = True
 
-STATIC_URL = "/static/"
-STATIC_ROOT = BASE_DIR / "static/"
+STATIC_URL = "/assets/"
+STATIC_ROOT = BASE_DIR / "vue/"
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "mediafiles"

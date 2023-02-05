@@ -9,6 +9,7 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 export default defineConfig({
     build: {
         outDir: path.resolve(__dirname, "../app/vue"),
+        emptyOutDir: true
     },
     plugins: [vue(), vueJsx()],
     resolve: {
